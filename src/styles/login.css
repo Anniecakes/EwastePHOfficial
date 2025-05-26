@@ -1,0 +1,74 @@
+
+
+
+
+  /* Popup Styling */
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .close-icon:hover {
+    color: #f44336;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    position: relative;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .popup-content p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .popup-content .btn {
+    margin-top: 1rem;
+    background-color: #28a745;
+  }
+  
+  .success-icon {
+    font-size: 3rem;
+    color: #28a745;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
